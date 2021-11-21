@@ -113,8 +113,6 @@ const CryptoDetailsStatistics = () => {
 };
 
 const Wrapper = styled.article`
-  //RECORDAR METER LOS ICONOS CONDICIONALES EN EL APPROVED SUPPLY
-  //PONER EL ICONO Y EL TEXTO AL LADO Y SEPARARLO DEL RESULTADO QUE DA MILLIFY
   .statistics-container {
     margin-top: 2rem;
   }

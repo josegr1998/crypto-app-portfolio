@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { links } from "../contants/links";
+import { links } from "../constants/links";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import icon from "../assets/btcp.png";
@@ -20,7 +20,10 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className='container'>
-        <img src={icon} alt='' />
+        <Link to='/'>
+          <img src={icon} alt='' />
+        </Link>
+
         <h2>Crypto App</h2>
         <FaBars
           className='nav-toggle'

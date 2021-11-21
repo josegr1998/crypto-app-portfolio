@@ -9,9 +9,6 @@ import {
 } from "../constants/constants";
 
 const baseUrl = "https://bing-news-search1.p.rapidapi.com";
-//by category and count `/news/search?q=${newsCategory}&safeSearch=Off&textFormat=Raw&freshness=Day&count=${count}`
-// "x-rapidapi-host": process.env.REACT_APP_xrapidapihost1,
-//"x-rapidapi-key": process.env.REACT_APP_xrapidapikey1,
 
 const NewsContext = React.createContext();
 

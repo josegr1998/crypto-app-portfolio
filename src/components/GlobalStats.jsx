@@ -3,12 +3,8 @@ import millify from "millify";
 import { useCryptoContext } from "../context/CryptoContext";
 import styled from "styled-components";
 
-//totalCryptocurrencies,total Market Cap, total Markets,TotalExchanges,total 24h volume
-
 const GlobalStats = () => {
   const { generalStats } = useCryptoContext();
-
-  //using generalStats to make the cards probably with a flex o grid display
 
   return (
     <Wrapper>
@@ -53,7 +49,6 @@ const Wrapper = styled.article`
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* column-gap: 1rem; */
     row-gap: 1rem;
   }
   h5 {

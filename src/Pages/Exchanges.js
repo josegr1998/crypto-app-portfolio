@@ -3,7 +3,7 @@ import { useCryptoContext } from "../context/CryptoContext";
 import styled from "styled-components";
 
 import SingleExchange from "../components/SingleExchange";
-//name, 24h trade volume, markets, change
+
 const Exchanges = () => {
   const { exchanges } = useCryptoContext();
 

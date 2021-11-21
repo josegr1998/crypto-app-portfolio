@@ -13,18 +13,8 @@ import {
 
 const CryptoContext = React.createContext();
 
-// const cryptoApiHeaders = {
-//   "x-rapidapi-host": process.env.REACT_APP_xrapidapihost,
-//   "x-rapidapi-key": process.env.REACT_APP_xrapidapikey,
-// };
-
 const baseUrl = "https://coinranking1.p.rapidapi.com";
-// cryptos info `/coins?limit=${count}`
-//crypto details`/coin/${coinId}`
-//cryptoHistory for chart `/coin/${coinId}/history/${timePeriod}`
-//getExchanges "/exchanges"
 
-//obtener todas las crypto, y en la version simplified del componente le hago un slice al array
 const initialState = {
   AllCryptoCurrencies: [],
   generalStats: {},
@@ -36,6 +26,7 @@ const initialState = {
   cryptoHistory: [],
   timePeriod: "7d",
   currentId: 1,
+  searchValue: "",
 };
 
 const CryptoProvider = ({ children }) => {
@@ -53,8 +44,7 @@ const CryptoProvider = ({ children }) => {
       });
       const coins = response.data.data.coins;
       const stats = response.data.data.stats;
-      // console.log(response);
-      // console.log(coins);
+
       const exchangesResponse = await axios.get(`${baseUrl}/exchanges`, {
         headers: {
           "x-rapidapi-host": process.env.REACT_APP_xrapidapihost_coins,

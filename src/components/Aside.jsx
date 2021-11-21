@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import icon from "../assets/btcp.png";
-import { links } from "../contants/links";
+import { links } from "../constants/links";
 import { Link } from "react-router-dom";
 
 const Aside = () => {
@@ -11,7 +11,10 @@ const Aside = () => {
       <div className='aside-container'>
         <aside>
           <div className='aside-header'>
-            <img src={icon} alt='' />
+            <Link to='/'>
+              <img src={icon} alt='' />
+            </Link>
+
             <h1 className='title'>
               Crypto <span>App</span>
             </h1>
@@ -54,10 +57,6 @@ const Wrapper = styled.section`
       width: 5rem;
       height: 5rem;
     }
-
-    /* span {
-      color: var(--secondary);
-    } */
   }
 
   .single-link-container {

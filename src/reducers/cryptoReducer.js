@@ -34,7 +34,11 @@ const reducer = (state, action) => {
       }
     });
 
-    return { ...state, filteredCryptocurrencies: newCoins };
+    return {
+      ...state,
+      filteredCryptocurrencies: newCoins,
+      searchValue: action.payload,
+    };
   }
   if (action.type === GET_SINGLE_COIN) {
     const { coin, coinHistory } = action.payload;

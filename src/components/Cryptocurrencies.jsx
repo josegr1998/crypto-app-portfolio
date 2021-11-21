@@ -13,15 +13,14 @@ const Cryptocurrencies = ({ simplified }) => {
     filteredCryptocurrencies,
     filterCoins,
     updateCurrentId,
+    searchValue,
   } = useCryptoContext();
 
   if (simplified) {
     AllCryptoCurrencies = AllCryptoCurrencies.slice(0, 10);
-    // console.log(AllCryptoCurrencies);
   } else {
     AllCryptoCurrencies = filteredCryptocurrencies;
   }
-  // console.log(AllCryptoCurrencies);
 
   if (isLoading) {
     return (
@@ -51,6 +50,7 @@ const Cryptocurrencies = ({ simplified }) => {
             placeholder='Search Cryptocurrency'
             className='input'
             onChange={(e) => filterCoins(e.target.value)}
+            value={searchValue}
           />
           {AllCryptoCurrencies.length < 1 && (
             <h2
@@ -73,12 +73,12 @@ const Cryptocurrencies = ({ simplified }) => {
                 <img src={crypto.iconUrl} alt='' />
               </div>
               <div className='crypto-body'>
-                <p>Price : $ {millify(crypto.price)}</p>
-                <p>Market Cap : $ {millify(crypto.marketCap)}</p>
+                <p>Price : $ {millify(crypto?.price)}</p>
+                <p>Market Cap : $ {millify(crypto?.marketCap)}</p>
                 <p>
                   Change :{" "}
                   <span className={crypto.change > 0 ? "green" : "red"}>
-                    {millify(crypto.change)}%
+                    {millify(crypto?.change)}%
                   </span>
                 </p>
               </div>
