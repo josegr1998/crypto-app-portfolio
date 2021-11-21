@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+cosas para mejorar:Poner el logo como un link para ir al home, borrar los comentarios, fijar de optimizar el codigo de el cryptoDetails component usando creando un array con la data de ambos de los cuadros que se muestran en la pag. Fijarse que cuando se busca una crypto en el search bar, si se miran los detalles y despues se vuelve atras, queda guardado el valor que se habia buscado antes. Considerar poner botones de goBack en las paginas
