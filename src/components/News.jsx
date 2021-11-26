@@ -190,9 +190,6 @@ const Wrapper = styled.section`
     border-bottom: 1px solid var(--secondary);
   }
   .article-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
     .header-link {
@@ -210,6 +207,11 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 1rem;
+    }
+    .article-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   @media screen and (min-width: 992px) {

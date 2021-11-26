@@ -39,23 +39,25 @@ const Wrapper = styled.article`
   margin-top: 4rem;
   background: var(--grey-300);
   padding: 1rem;
+  max-width: 100vw;
   .title {
     color: var(--secondary);
   }
   .single-stat-container {
     padding: 0.5rem;
   }
-  .container {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 1rem;
-  }
+
   h5 {
     color: var(--secondary);
   }
   @media screen and (min-width: 992px) {
     margin-top: 0;
+    .container {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1rem;
+    }
   }
 `;
 

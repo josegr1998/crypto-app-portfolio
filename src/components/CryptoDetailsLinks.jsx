@@ -61,10 +61,11 @@ const Wrapper = styled.article`
   }
   h4 {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 100px 1fr;
+    font-size: 1rem;
 
     a {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   .links-title {
@@ -77,6 +78,15 @@ const Wrapper = styled.article`
     column-gap: 4rem;
     .links-title {
       font-size: 2.3rem;
+    }
+    h4 {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      font-size: 1.2rem;
+
+      a {
+        font-size: 1.2rem;
+      }
     }
   }
 `;

@@ -21,5 +21,11 @@ const Wrapper = styled.footer`
   height: 10rem;
   display: grid;
   place-items: center;
+  h2 {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 export default Footer;

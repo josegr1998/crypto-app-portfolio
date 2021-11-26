@@ -59,7 +59,7 @@ const Wrapper = styled.nav`
   background: var(--primary-500);
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   z-index: 10;
 
@@ -71,6 +71,7 @@ const Wrapper = styled.nav`
     text-align: center;
     padding-right: 1rem;
     padding-left: 1rem;
+    width: 100%;
   }
   img {
     width: 3rem;

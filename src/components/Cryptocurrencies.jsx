@@ -146,9 +146,6 @@ const Wrapper = styled.article`
     color: var(--secondary);
   }
   .article-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
     .header-link {
@@ -177,6 +174,11 @@ const Wrapper = styled.article`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+    }
+    .article-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   @media screen and (min-width: 992px) {
